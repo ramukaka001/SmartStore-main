@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaFacebook, FaInstagram, FaTwitter, FaEnvelope } from 'react-icons/fa';
 
-const Hero = ({ openLeadForm }) => {
+const Hero = ({ openLeadForm, openScheduleForm }) => {
   return (
     <section className="pt-24 lg:pt-32 pb-20 bg-primary-50 relative" id="home">
       <div className="container">
@@ -23,7 +23,7 @@ const Hero = ({ openLeadForm }) => {
                 INVESTMENT
               </button>
               <button
-                onClick={openLeadForm}
+                onClick={openScheduleForm}
                 className="btn btn-outline uppercase">
                 SCHEDULE MEETING
               </button>

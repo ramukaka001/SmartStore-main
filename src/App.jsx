@@ -14,21 +14,17 @@ import LeadFormModal from './components/modals/LeadFormModal';
 import ScheduleFormModal from './components/modals/ScheduleFormModal';
 
 function App() {
-  const [isLeadFormOpen, setIsLeadFormOpen] = useState(false);
+  const [modalType, setModalType] = useState(null);
 
-  const openLeadForm = () => {
-    setIsLeadFormOpen(true);
-  };
-
-  const closeLeadForm = () => {
-    setIsLeadFormOpen(false);
-  };
+  const openLeadForm = () => setModalType('lead');
+  const openScheduleForm = () => setModalType('schedule');
+  const closeModal = () => setModalType(null);
 
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow">
-        <Hero openLeadForm={openLeadForm} />
+        <Hero openLeadForm={openLeadForm} openScheduleForm={openScheduleForm} />
         <Services />
         <HowItWorks />
         <DeliveryApp />
@@ -38,8 +34,8 @@ function App() {
         <ContactForm />
       </main>
       <Footer />
-      {isLeadFormOpen && <LeadFormModal onClose={closeLeadForm} />}
-      {isLeadFormOpen && <ScheduleFormModal onClose={closeLeadForm} />}
+      {modalType === 'lead' && <LeadFormModal onClose={closeModal} />}
+      {modalType === 'schedule' && <ScheduleFormModal onClose={closeModal} />}
     </div>
   );
 }
