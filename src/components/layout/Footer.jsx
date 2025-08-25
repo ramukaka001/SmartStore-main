@@ -9,12 +9,16 @@ const Footer = () => {
           {/* Brand and description */}
           <div className="lg:col-span-2">
             <a href="/" className="text-xl font-bold flex items-center mb-4">
-              <span className="text-white">NIKKI</span>
-              <span className="text-accent-500">ENTERPRISE</span>
+              <span className="text-white">KIRANEST</span>
+              <span className="text-accent-500">GROCERY</span>
             </a>
             <p className="text-gray-400 mb-4">
               Design amazing digital experiences that create more happy in the world.
             </p>
+            <div className="flex flex-col w-full gap-0.5 text-gray-500 mb-4">
+                <p><strong>Founder & Ceo:</strong> kamal kishore saini</p>
+                <p><strong>Adress:</strong> 402, 4th floor shri ganesh darshan building , mandvi lane versova village mumbai, 400061</p>
+            </div>
           </div>
 
           {/* Product Links */}
