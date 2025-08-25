@@ -29,8 +29,8 @@ const Header = () => {
       <div className="container flex justify-between items-center">
         <div className="flex items-center">
           <a href="/" className="text-xl font-bold flex items-center">
-            <span className="text-dark-800">NIKKI</span>
-            <span className="text-accent-500">ENTERPRISE</span>
+            <span className="text-dark-800">KIRANEST</span>
+            <span className="text-accent-500">GROCERY</span>
           </a>
         </div>
 
