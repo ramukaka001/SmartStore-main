@@ -52,15 +52,15 @@ const ContactForm = () => {
             </p>
 
             <div className="space-y-6">
-              {[1, 2, 3].map((_, index) => (
+              {[1].map((_, index) => (
                 <div key={index} className="flex items-center">
                   <div className="w-12 h-12 bg-primary-200 rounded-full flex items-center justify-center mr-4">
                     <FaUser className="text-primary-700" />
                   </div>
                   <div>
-                    <h4 className="font-semibold">Vikas Sharma</h4>
+                    <h4 className="font-semibold">kamal kishore saini</h4>
                     <p className="text-dark-500 text-sm">Founder & CEO</p>
-                    <p className="text-primary-600 text-sm">vikas@nikkismart.com</p>
+{/*                     <p className="text-primary-600 text-sm">vikas@nikkismart.com</p> */}
                   </div>
                 </div>
               ))}
