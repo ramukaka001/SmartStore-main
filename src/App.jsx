@@ -29,7 +29,7 @@ function App() {
         <HowItWorks />
         <DeliveryApp />
         <MarketComparison />
-        <Testimonials />
+{/*         <Testimonials /> */}
         <FAQ />
         <ContactForm />
       </main>
